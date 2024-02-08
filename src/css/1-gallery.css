@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 696px;
+    padding: 24px 24px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px 24px;
+}
+
+.gallery-item {
+    height: 200px;
+    width: 360px;
+}
+
+.gallery-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sl-overlay {
+    background: rgba(46, 47, 66, 1);
+}
