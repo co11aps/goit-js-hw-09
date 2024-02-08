@@ -8,9 +8,7 @@
 
 .gallery-section {
     background-color: #FFF;
-    width: 1440px;
-    height: 696px;
-    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .gallery-item {

@@ -24,6 +24,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
-section {
-  margin: 0, auto;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
