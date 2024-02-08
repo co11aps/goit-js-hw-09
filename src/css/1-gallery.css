@@ -28,3 +28,7 @@
 .sl-navigation {
     color: #FFF;
 }
+
+.sl-wrapper .sl-navigation button {
+    color: #FFF
+}
