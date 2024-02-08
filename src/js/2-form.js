@@ -6,8 +6,8 @@ form.addEventListener('input', onFormInput);
 form.addEventListener('submit', onFormSubmit);
 
 function onFormInput() {
-  const email = form.elements.email.value;
-  const message = form.elements.message.value;
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
 
   const data = {
     email,
@@ -37,15 +37,19 @@ function onFormSubmit(evt) {
   const email = form.elements.email.value;
   const message = form.elements.message.value;
 
-  const data = {
-    email,
-    message,
-  };
+  if (email !== '' && message !== '') {
+    const data = {
+      email,
+      message,
+    };
 
-  console.log(data);
+    console.log(data);
 
-  localStorage.removeItem(LOCAL_STORAGE_KEY);
-  form.reset();
+    localStorage.removeItem(LOCAL_STORAGE_KEY);
+    form.reset();
+  } else {
+    alert('Please fulfill all fields!');
+  }
 }
 
 function init() {
